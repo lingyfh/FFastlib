@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FFastlib_Example' do
+  pod 'FFastlib', :path => '../'
+
+  target 'FFastlib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
