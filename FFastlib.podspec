@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.public_header_files = 'FFastlib/FFastlib.h'
+  s.public_header_files = 'FFastlib/*.h', 'FFastlib/**/*.h'
   s.source_files = 'FFastlib/**/*'
   
   # s.resource_bundles = {

@@ -20,6 +20,12 @@ it, simply add the following line to your Podfile:
 pod "FFastlib"
 ```
 
+```
+#import "FFastLib.h" 
+```
+
+
+
 ## Author
 
 lingyfh, lingyfh@gmail.com

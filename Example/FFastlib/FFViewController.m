@@ -7,10 +7,7 @@
 //
 
 #import "FFViewController.h"
-
-@import FFastlib;
-
-
+#import "FFastLib.h"
 
 @interface FFViewController ()
 
