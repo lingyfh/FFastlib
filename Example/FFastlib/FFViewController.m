@@ -8,6 +8,10 @@
 
 #import "FFViewController.h"
 
+@import FFastlib;
+
+
+
 @interface FFViewController ()
 
 @end
@@ -17,6 +21,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIView *cornerRView = [[UIView alloc] initWithFrame:CGRectMake(20, 20, 200, 200)];
+    [cornerRView setBackgroundColor:[UIColor blueColor]];
+    [self.view addSubview:cornerRView];
+    [cornerRView setCornerRadius:10];
+    
+    PLog(@"CurrentLanguage = %@", FFCurrentLanguage);
+    PLog(@"sys name = %@", FFSysName);
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

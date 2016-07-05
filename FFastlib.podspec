@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'FFastlib'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of FFastlib.'
+  s.summary          = '一些常规操作；一些常用的第三方库'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,40 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/FFastlib'
+  s.homepage         = 'https://github.com/lingyfh/FFastlib'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'lingyfh' => 'fangshulong@androidesk.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/FFastlib.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'lingyfh' => 'lingyfh@gmail.com' }
+  s.source           = { :git => 'https://github.com/lingyfh/FFastlib.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'FFastlib/Classes/**/*'
+  s.public_header_files = 'FFastlib/FFastlib.h'
+  s.source_files = 'FFastlib/**/*'
   
   # s.resource_bundles = {
   #   'FFastlib' => ['FFastlib/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
+
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.frameworks = 'UIKit'
+  s.requires_arc = true
+  # 网络请求
+  s.dependency 'AFNetworking', '~> 3.0'
+  # 图片加载
+  s.dependency 'SDWebImage', '~>3.7'
+  # webp格式图片支持
+  s.dependency 'SDWebImage/WebP'
+  # 进度Loading等
+  s.dependency 'MBProgressHUD', '~> 0.9.2'
+  # 下拉刷新上拉刷新等
+  s.dependency 'MJRefresh'
+  # 写布局使用
+  s.dependency 'Masonry'
+  # Toast
+  s.dependency 'Toast', '~> 3.0'
+
 end

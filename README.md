@@ -22,7 +22,7 @@ pod "FFastlib"
 
 ## Author
 
-lingyfh, fangshulong@androidesk.com
+lingyfh, lingyfh@gmail.com
 
 ## License
 
