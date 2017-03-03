@@ -21,7 +21,7 @@ pod "FFastlib"
 ```
 
 ```
-#import "FFastLib.h" 
+#import <FFastlib/FFastlib.h>
 ```
 
 
