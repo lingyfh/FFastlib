@@ -7,7 +7,7 @@
 //
 
 #import "FFViewController.h"
-#import "FFastLib.h"
+@import FFastlib;
 
 @interface FFViewController ()
 
@@ -25,7 +25,16 @@
     
     PLog(@"CurrentLanguage = %@", FFCurrentLanguage);
     PLog(@"sys name = %@", FFSysName);
+    
+    
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 240, 200, 200)];
+    [self.view addSubview:imgView];
+    [imgView sd_setImageWithURL:[NSURL URLWithString:@"http://img0.adesk.com/download/58b6b782e7bce768222f288c"]];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSDictionary *dict = @{@"key": @"value"};
+    NSString *str = [JSONParse dictToNSString:dict];
+    NSLog(@"string = %@", str);
 }
 
 - (void)didReceiveMemoryWarning

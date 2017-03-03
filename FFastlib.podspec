@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FFastlib'
-  s.version          = '0.1.2'
+  s.version          = '0.1.4'
   s.summary          = '一些常规操作；一些常用的第三方库'
 
 # This description is used to generate tags and improve search results.
@@ -56,5 +56,7 @@ TODO: Add long description of the pod here.
   s.dependency 'Masonry'
   # Toast
   s.dependency 'Toast', '~> 3.0'
+  # JSON
+  s.dependency 'JSONParse'
 
 end
