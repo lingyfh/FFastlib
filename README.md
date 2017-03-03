@@ -22,8 +22,21 @@ pod "FFastlib"
 
 ```
 #import <FFastlib/FFastlib.h>
+or
+@import FFastlib;
 ```
 
+## incould
+``` bash
+AFNetworking
+SDWebImage
+SDWebImage/WebP
+MBProgressHUD
+MJRefresh
+Masonry
+Toast
+JSONParse
+```
 
 
 ## Author
