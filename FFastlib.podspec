@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FFastlib'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = '一些常规操作；一些常用的第三方库'
 
 # This description is used to generate tags and improve search results.
@@ -45,7 +45,7 @@ TODO: Add long description of the pod here.
   # 网络请求
   s.dependency 'AFNetworking', '~> 3.0'
   # 图片加载
-  s.dependency 'SDWebImage', '~>3.7'
+  s.dependency 'SDWebImage', '~> 4'
   # webp格式图片支持
   s.dependency 'SDWebImage/WebP'
   # 进度Loading等
