@@ -49,7 +49,7 @@ TODO: Add long description of the pod here.
   # webp格式图片支持
   s.dependency 'SDWebImage/WebP'
   # 进度Loading等
-  s.dependency 'MBProgressHUD', '~> 0.9.2'
+  s.dependency 'MBProgressHUD', '~> 1.0.0'
   # 下拉刷新上拉刷新等
   s.dependency 'MJRefresh'
   # 写布局使用
